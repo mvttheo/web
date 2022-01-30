@@ -6,6 +6,7 @@
 
 html {
     font-size: 62.5%;
+    background: var(--gray-white);
 }
 
 :root {
@@ -13,7 +14,121 @@ html {
     --black: #000;
     --gray: #F0F0F0;
     --white: #fff;
+    --inter: 'Inter', sans-serif;
+    --space-grotesk: 'Space Grotesk', sans-serif;
+}
 
+header {
+    height: 55px;
+    background: var(--black);
+    margin-bottom: 20px;
+    color: var(--white);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+}
+
+main {
+    padding: 0px 20px;
+}
+
+.welcome {
+    margin-top: -20px;
+}
+
+.wel {
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    text-align: left;
+
+    background: var(--gray);
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+.welcome{
+    display: flex;
+    column-gap: 20px;
+}
+
+/*Primer tarjeta de bienvenida*/
+
+.wel-1 {
+    width: 40%;
+    padding: 20px 25px;
+
+    background-image: url('../assets/images/Presentation.jpg');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wel-1 h2 {
+    font-size: 2.4rem;
+    line-height: 30px;
+    letter-spacing: -0.388px;
+    
+    font-family: var(--inter);
+    font-style: normal;
+    font-weight: normal;
+
+    color: var(--white);
     
 }
 
+/*Segnuda tarjeta de Conocimientos*/
+
+.wel-2 {
+    width: 60%;
+    padding: 20px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.wel-2 h3 {
+    font-size: 2.4rem;
+    line-height: 30px;
+    letter-spacing: -0.388px;
+    
+    font-family: var(--inter);
+    font-style: normal;
+    font-weight: normal;
+    
+}
+
+.wel-2 .descubrir {
+    padding: 13px 20px;
+
+    background: var(--black);
+    color: var(--white);
+    border: none;
+    border-radius: 2000px;
+
+    font-family: var(--inter);
+    font-weight: bold;
+    font-style: normal;
+
+    cursor: pointer;
+}
+
+.title-proyect{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+    padding: 0 20px;
+
+    margin: 0 -20px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color:var(--gray) ;
+}
