@@ -29,6 +29,8 @@ header {
     align-items: center;
     justify-content: space-between;
 
+    
+
     padding: 0 20px;
 }
 
@@ -113,17 +115,22 @@ main {
     border-radius: 2000px;
 
     font-family: var(--inter);
-    font-weight: bold;
+    font-weight: 500;
     font-style: normal;
 
     cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 1.6rem;
 }
 
 .title-proyect{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 100px;
 
     padding: 0 20px;
 
@@ -131,4 +138,192 @@ main {
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-color:var(--gray) ;
+
+    margin-bottom: 20px;
+    
+}
+
+.title-proyect h3 {
+    font-size: 3.8rem;
+    font-family: var(--space-grotesk);
+}
+
+.title-proyect button {
+    padding: 13px 20px;
+
+    background: var(--black);
+    color: var(--white);
+    border: none;
+
+    border-radius: 1000px;
+
+    font-family: var(--inter);
+    font-weight: 500;
+    font-style: normal;
+
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+
+    font-size: 1.6rem;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.projects .pj {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: var(--gray);
+    width: 50%;
+
+    height: 50vh;
+    padding: 15px;
+    border-radius: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+.projects .pj .tittle {
+    
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+
+    align-items: center;
+
+    font-family: var(--space-grotesk);
+}
+
+.projects .pj .tittle h3{
+    font-size: 2.2rem;
+    color: var(--white);
+}
+
+.projects .pj .tittle button{
+    border-radius: 1000px;
+    border: none;
+
+    padding: 15px;
+
+    width: 48px;
+    height: 48px;
+    background: var(--white);
+
+    cursor: pointer;
+}
+
+
+.projects .pj .tags {
+    display: flex;
+    gap: 10px;
+}
+
+.projects .pj .tags p {
+    padding: 6.5px 10px;
+    background: wheat;
+    border-radius: 10px;
+
+    background: rgba( 255, 255, 255, 0.15 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    font-family: var(--inter);
+    font-weight: bold;
+    font-style: normal;
+
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+/*Iconos*/
+
+.more {
+    display: inline-block;
+    background-image: url('../assets/images/arrow.svg');
+    width: 20px;
+    height: 20px;
+}
+
+.more_white {
+    margin-left: 5px;
+    background-image: url('../assets/images/arrow_white.svg');
+    width: 20px;
+    height: 20px;
+}
+
+header .social{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+    align-items: center;
+}
+
+header .ico {
+    background-image: url('../assets/images/icon.svg');
+    width: 26px;
+    height: 26px;
+
+    cursor: pointer;
+}
+
+header .social .twitter {
+    
+    background-image: url('../assets/images/Twitter.svg');
+
+    width: 20px;
+    height: 20px;
+
+    cursor: pointer;
+    
+}
+
+header .social .linkedin {
+    
+    background-image: url('../assets/images/linkedin.svg');
+
+    width: 20px;
+    height: 20px;
+
+    cursor: pointer;
+    
+}
+
+header .social .medium {
+    
+    background-image: url('../assets/images/medium.svg');
+
+    width: 20px;
+    height: 20px;
+
+    cursor: pointer;
+    
+}
+
+/*Proyectos*/
+
+.projects .p1 {
+    background-image: url('../assets/images/pj1.jpg');
+}
+
+.projects .p2 {
+    background-image: url('../assets/images/pj2.jpg');
 }
