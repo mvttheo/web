@@ -44,7 +44,7 @@ main {
 
 .wel {
     display: flex;
-    height: 50vh;
+    height: 40vh;
     flex-direction: column;
     text-align: left;
 
@@ -61,7 +61,7 @@ main {
 /*Primer tarjeta de bienvenida*/
 
 .wel-1 {
-    width: 40%;
+    width: 45%;
     padding: 20px 25px;
 
     background-image: url('../assets/images/Presentation.jpg');
@@ -74,7 +74,6 @@ main {
 .wel-1 h2 {
     font-size: 2.4rem;
     line-height: 30px;
-    letter-spacing: -0.388px;
     
     font-family: var(--inter);
     font-style: normal;
@@ -87,7 +86,7 @@ main {
 /*Segnuda tarjeta de Conocimientos*/
 
 .wel-2 {
-    width: 60%;
+    width: 55%;
     padding: 20px 25px;
 
     display: flex;
@@ -98,8 +97,6 @@ main {
 .wel-2 h3 {
     font-size: 2.4rem;
     line-height: 30px;
-    letter-spacing: -0.388px;
-    
     font-family: var(--inter);
     font-style: normal;
     font-weight: normal;
@@ -170,25 +167,34 @@ main {
 }
 
 .projects {
-    display: flex;
+
     justify-content: space-between;
 
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+    margin-bottom: 20px;
+
 }
 
 .projects .pj {
+
     display: flex;
     flex-direction: column;
+
     justify-content: space-between;
 
     background-color: var(--gray);
-    width: 50%;
+    width: 100%;
 
     height: 50vh;
     padding: 15px;
     border-radius: 20px;
 
-    margin-bottom: 20px;
+    min-height: 320px;
+    max-width: 100%;
 }
 
 
@@ -251,6 +257,28 @@ main {
 
     color: var(--white);
     font-size: 1.3rem;
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+    padding: 0 20px;
+
+    background:var(--gray);
+
+    font-family: var(--inter);
+
+    font-size: 1.2rem;
+
+    font-weight: 500;
+
+    color: #a5a5a5;
+
 }
 
 /*Iconos*/
@@ -322,8 +350,14 @@ header .social .medium {
 
 .projects .p1 {
     background-image: url('../assets/images/pj1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .projects .p2 {
     background-image: url('../assets/images/pj2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
