@@ -4,23 +4,48 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
-    background: var(--gray-white);
-}
+
 
 :root {
-    --gray-white: #F5F5F5;
-    --black: #000;
+    --wallpaper: #F5F5F5;
     --gray: #F0F0F0;
     --white: #fff;
+    --title: #000;
+    --buttons-large: #000;
     --inter: 'Inter', sans-serif;
     --space-grotesk: 'Space Grotesk', sans-serif;
+    --head: #000;
+    --button-color-large: #fff;
+
+    --dis-border: none;
+
+    --arrow-black: url('../assets/images/arrow.svg');
+    --arrow: url('../assets/images/arrow_white.svg');
+}
+
+:root .dark-theme{
+
+    --dis-border: 1px solid #37383E;
+
+    --head: #37383E;
+    --wallpaper: #000;
+    --gray: #37383E;
+    --buttons-large: #42434b;
+    --title: #fff;
+    --button-color-large: rgb(255, 255, 255);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--wallpaper);
 }
 
 header {
     height: 55px;
-    background: var(--black);
+    background: var(--head);
     margin-bottom: 20px;
     color: var(--white);
 
@@ -51,6 +76,8 @@ main {
     background: var(--gray);
     margin: 20px 0;
     border-radius: 20px;
+
+    border: var(--dis-border);
 }
 
 .welcome{
@@ -99,6 +126,8 @@ main {
     line-height: 30px;
     font-family: var(--inter);
     font-style: normal;
+
+    color: var(--title);
     font-weight: normal;
     
 }
@@ -106,8 +135,8 @@ main {
 .wel-2 .descubrir {
     padding: 13px 20px;
 
-    background: var(--black);
-    color: var(--white);
+    background: var(--buttons-large);
+    color: var(--button-color-large);
     border: none;
     border-radius: 2000px;
 
@@ -143,13 +172,15 @@ main {
 .title-proyect h3 {
     font-size: 3.8rem;
     font-family: var(--space-grotesk);
+
+    color: var(--title);
 }
 
 .title-proyect button {
     padding: 13px 20px;
 
-    background: var(--black);
-    color: var(--white);
+    background: var(--buttons-large);
+    color: var(--button-color-large);
     border: none;
 
     border-radius: 1000px;
@@ -285,16 +316,30 @@ footer {
 
 .more {
     display: inline-block;
-    background-image: url('../assets/images/arrow.svg');
+    background-image: var(--arrow-black);
     width: 20px;
     height: 20px;
 }
 
 .more_white {
     margin-left: 5px;
-    background-image: url('../assets/images/arrow_white.svg');
+    background-image: var(--arrow);
     width: 20px;
     height: 20px;
+}
+
+header .btn-toggle {
+    padding: 5px 10px;
+    border-radius: 1000px;
+    border: none;
+
+    background: var(--buttons-large);
+    color: var(--white);
+
+    font-family: var(--space-grotesk);
+    font-size: 1.5rem;
+
+    font-weight: 400;
 }
 
 header .social{
@@ -348,16 +393,18 @@ header .social .medium {
 
 /*Proyectos*/
 
-.projects .p1 {
-    background-image: url('../assets/images/pj1.jpg');
+.projects .pj{
+    border: var(--dis-border);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+.projects .p1 {
+    background-image: url('../assets/images/pj1.jpg');
+    
+}
+
 .projects .p2 {
     background-image: url('../assets/images/pj2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
