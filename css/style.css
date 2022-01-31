@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-
+::-webkit-scrollbar {
+    display: none;
+}
 
 :root {
     --wallpaper: #F5F5F5;
@@ -17,6 +19,8 @@
     --head: #000;
     --button-color-large: #fff;
 
+    --toggle: rgb(39, 39, 39);
+
     --dis-border: none;
 
     --arrow-black: url('../assets/images/arrow.svg');
@@ -25,18 +29,19 @@
 
 :root .dark-theme{
 
+    --dis-border: 1px solid #1b1c1f;
 
-    --dis-border: 1px solid #37383E;
-
-    --head: #37383E;
+    --head: #1b1c1f;
     --wallpaper: #000;
-    --gray: #37383E;
-    --buttons-large: #42434b;
+    --gray: #1b1c1f;
+    --buttons-large: #26272c;
+    --toggle: #26272c;
     --title: #fff;
     --button-color-large: rgb(255, 255, 255);
 }
 
 html {
+
     font-size: 62.5%;
 }
 
@@ -66,6 +71,10 @@ main {
 
 .welcome {
     margin-top: -20px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .wel {
@@ -152,6 +161,9 @@ main {
 
     font-size: 1.6rem;
 }
+.wel-2 .descubrir:hover {
+    opacity: 90%;
+}
 
 .title-proyect{
     display: flex;
@@ -196,6 +208,10 @@ main {
     align-items: center;
 
     font-size: 1.6rem;
+}
+
+.title-proyect button:hover {
+    opacity: 90%;
 }
 
 .projects {
@@ -266,6 +282,11 @@ main {
     cursor: pointer;
 }
 
+.projects .pj .tittle button:hover{
+    opacity: 90%;
+}
+
+
 
 .projects .pj .tags {
     display: flex;
@@ -330,11 +351,13 @@ footer {
 }
 
 header .btn-toggle {
+    cursor: pointer;
+
     padding: 5px 10px;
     border-radius: 1000px;
     border: none;
 
-    background: var(--buttons-large);
+    background: var(--toggle);
     color: var(--white);
 
     font-family: var(--space-grotesk);
@@ -391,6 +414,19 @@ header .social .medium {
     cursor: pointer;
     
 }
+
+header .social .linkedin:hover {
+    opacity: 70%;
+}
+
+header .social .medium:hover {
+    opacity: 70%;
+}
+
+header .social .twitter:hover {
+    opacity: 70%;
+}
+
 
 /*Proyectos*/
 
