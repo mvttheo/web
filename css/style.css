@@ -248,7 +248,7 @@ a {
 
 .projects .pj .tittle {
     
-    background: rgba( 255, 255, 255, 0.15 );
+    background: rgba(89, 89, 89, 0.26);
     backdrop-filter: blur( 6.5px );
     -webkit-backdrop-filter: blur( 6.5px );
     border-radius: 10px;
@@ -267,6 +267,7 @@ a {
 .projects .pj .tittle h3{
     font-size: 2.2rem;
     color: var(--white);
+    padding-right: 20px;
 }
 
 .projects .pj .tittle button{
@@ -295,10 +296,9 @@ a {
 
 .projects .pj .tags p {
     padding: 6.5px 10px;
-    background: wheat;
     border-radius: 10px;
 
-    background: rgba( 255, 255, 255, 0.15 );
+    background: rgba(89, 89, 89, 0.26);
     backdrop-filter: blur( 6.5px );
     -webkit-backdrop-filter: blur( 6.5px );
     border-radius: 10px;
@@ -442,6 +442,3 @@ header .social .twitter:hover {
     
 }
 
-.projects .p2 {
-    background-image: url('../assets/images/pj2.jpg');
-}
