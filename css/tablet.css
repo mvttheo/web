@@ -1,0 +1,15 @@
+
+main{
+
+    flex-direction: column;
+}
+
+main .M{
+    width: 100%;
+    height: auto;
+}
+
+
+main .M-2 {
+    overflow-y: inherit;
+}

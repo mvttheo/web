@@ -1,0 +1,29 @@
+.name {
+    display: none;
+}
+
+header .H-2  .redes p {
+    display: none;
+}
+
+header .H-2 .redes .arrow {
+    display: none;
+}
+
+.tags_s {
+
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+header .H-2 .CTA button{
+    font-size: 1.2rem;
+}
+
+header .box-icon {
+    margin-right: 10px;
+}
+
+main .M-1 article .knowledge {
+    flex-wrap: wrap;
+}
