@@ -321,7 +321,7 @@ main .M-2 article .img-a{
 
     border-radius: 5px;
     width: 40%;
-    height: 145px;
+    height: auto;
     margin-right: 15px; 
 
     background-position: center;
