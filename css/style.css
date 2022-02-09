@@ -309,6 +309,7 @@ main .M-2 .title{
 
 
 main .M-2 article{
+    min-height: 170px;
     display: flex;
     padding: 10px;
     border: var(--border);
