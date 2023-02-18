@@ -14,7 +14,7 @@
     --font: 'Manrope', sans-serif;
 
 
-    --border: solid 1px #E2E2E2;
+    --border: solid 1px #dadada;
     --title: 2.0rem;
     --title-weight: 800;
     --sub-title-weight: 600; 
@@ -37,7 +37,7 @@
     --p: #000;
     --p2: #666;
 
-    --two-background: #f9f9f9;
+    --two-background: #ebebeb;
 
     --wallpaper-target: #FFFFFF;
 
@@ -58,7 +58,7 @@
 
     --toggle: flex-end;
 
-    --border: solid 1px #191919 ;
+    --border: solid 1.2px #191919 ;
     --title: 2.0rem;
     --title-weight: 800;
     --sub-title-weight: 600; 
@@ -87,12 +87,8 @@
 }
 
 html {
-
     font-size: 62.5%;
-    font-family: var(--font);
-   
-
-    
+    font-family: var(--font); 
 }
 
 /*------------------ HEADER ---------------*/
@@ -171,7 +167,7 @@ header .H-2 .CTA button{
     margin: 0 5px;
     background: var(--button-back);
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 400;
     color: var(--button-color);
 
@@ -181,8 +177,8 @@ header .H-2 .CTA button{
 }
 
 header .H-2 .redes p{
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1.8rem;
+    font-weight: 600;
     color: var(--danger);
     margin-right:10px ;
 }
@@ -194,10 +190,10 @@ header .H-2 .redes .toggle{
     
     padding: 0px;
     background: var(--two-background);
-    min-width: 38px;
-    min-height: 20px;
-    max-width: 38px;
-    max-height: 20px;
+    min-width: 42px;
+    min-height: 24px;
+    max-width: 42px;
+    max-height: 24px;
     padding: 0 2px;
     border-radius: 1000px;
 
@@ -210,8 +206,8 @@ header .H-2 .redes .toggle{
 header .H-2 .redes .toggle span{
     
     border-radius: 1000px;
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
     background: var(--toggle-btn);
 }
 
@@ -251,7 +247,7 @@ main .M-1{
 
 main .M-1 h3{
     width: 65%;
-    font-size: 1.6rem;
+    font-size: 2.1rem;
     font-weight: 600;
     color: var(--p);
 
@@ -264,7 +260,7 @@ main .M-1 .iwith{
 
 main .M-1 article h4{
     font-weight: 900;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--p);
 }
 
@@ -345,7 +341,7 @@ main .M-2 .content h4{
 }
 
 main .M-2 article .content p{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 400;
     margin-bottom: 8px;
     color: var(--p2);
