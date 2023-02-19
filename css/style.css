@@ -46,6 +46,9 @@
     --wall: #fff;
 
     --filter-i: invert(0%);
+
+    --background-linear: linear-gradient(to left, #0ba54b, #115dc0, #0b27c2, #ad01fd, #0b86a5);
+
     
 }
 
@@ -84,6 +87,8 @@
     --two-background: #1f1f1f;
 
     --wallpaper-target: #171717;
+
+    --background-linear: linear-gradient(to left, #ec3d3d, #f79d16, #e2df0a, #a72ecc, #ff008c);
 }
 
 html {
@@ -101,7 +106,7 @@ header{
 
     background: var(--hg);
     width: 100%;
-    height: 12vh;
+    height: 10vh;
     display: flex;
 
     justify-content: space-between;
@@ -233,6 +238,7 @@ main .M{
     width: 50%;
     height: 100%;
     padding: 35px;
+    margin-bottom: -15%;
 }
 
 /*Bienvenida*/
@@ -313,14 +319,14 @@ main .M-1 article .p-goal {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    background-image: linear-gradient(to left, #FFD700, #4020fa, #237ebb, #2ecc71, #FFD700);    
+    background-image: var(--background-linear);    
     animation: color 5s linear infinite;
-    background-size: 500%;    
+    background-size: 200%;    
 }
 
 @keyframes color {
     from {
-        background-position: 500%;
+        background-position: 200%;
     }
 
     to {
@@ -413,7 +419,7 @@ main .M-2  article .content .tag-write{
     display: inline-block;
     width: 15px;
     height: 15px;
-    
+    color: black;
 }
 
 /*------------------------FOOOOOTEEER-------------------------*/
