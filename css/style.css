@@ -259,8 +259,8 @@ main .M-1 .iwith{
 }
 
 main .M-1 article h4{
-    font-weight: 900;
-    font-size: 1.4rem;
+    font-weight: 600;
+    font-size: 1.6rem;
     color: var(--p);
 }
 
@@ -285,6 +285,33 @@ main .M-1 article .tag-know{
     color: var(--p2);
     margin-right: 10px ;
     background: var(--two-background);
+}
+
+main .M-1 article .knowledge-goal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+main .M-1 article .tag-know-goal{
+
+    display: inline-block;
+    align-items: center;
+
+    margin-top: 15px;
+    display: flex;
+    padding: 8px;
+
+    border-radius: 100px;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+
+    color: var(--p2);
+    padding: 8px 12px ;
+    border: var(--border);
+
 }
 
 main .M-1 article .tag-know p{
@@ -378,7 +405,7 @@ main .M-2  article .content .tag-write{
 /*------------------------FOOOOOTEEER-------------------------*/
 
 footer p{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: var(--p2);
     
 }
@@ -403,11 +430,33 @@ a{
 
 
 .figma{
+    background-size: contain;
     background-image: url('../assets/images/figma.svg');
 }
 
 .html{
+    background-size: contain;
     background-image: url('../assets/images/html5.svg');
+}
+
+.xd{
+    background-size: contain;
+    background-image: url('../assets/images/adobe-xd.svg');
+}
+
+.vue{
+    background-size: contain;
+    background-image: url('../assets/images/vue-js.svg');
+}
+
+.php{
+    background-size: contain;
+    background-image: url('../assets/images/php.svg');
+}
+
+.laravel{
+    background-size: contain;
+    background-image: url('../assets/images/laravel.svg');
 }
 
 .github{
@@ -415,18 +464,22 @@ a{
 }
 
 .css{
+    background-size: contain;
     background-image: url('../assets/images/css3.svg');
 }
 
 .js{
+    background-size: contain;
     background-image: url('../assets/images/js.svg');
 }
 
 .git{
+    background-size: contain;
     background-image: url('../assets/images/git.svg');
 }
 
 .eth{
+    background-size: contain;
     background-image: url('../assets/images/eth.svg');
 }
 
@@ -448,5 +501,17 @@ main .M-2 article .g2{
 main .M-2 article .g3{
 
     background-image: url(../assets/images/p3j.jpg);
+
+}
+
+main .M-2 article .g4{
+
+    background-image: url(../assets/images/p4j.jpg);
+
+}
+
+main .M-2 article .g5{
+
+    background-image: url(../assets/images/p5j.jpg);
 
 }
