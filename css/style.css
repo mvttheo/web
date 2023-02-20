@@ -414,13 +414,13 @@ main .M-2  article .content .tag-write{
 
 
 
-.icon-a{
+/* .icon-a{
     filter: var(--filter-i);    
     display: inline-block;
     width: 15px;
     height: 15px;
     color: black;
-}
+} */
 
 /*------------------------FOOOOOTEEER-------------------------*/
 
@@ -449,7 +449,7 @@ a{
 
 
 
-.figma{
+/* .figma{
     background-size: contain;
     background-image: url('../assets/images/figma.svg');
 }
@@ -501,7 +501,7 @@ a{
 .eth{
     background-size: contain;
     background-image: url('../assets/images/eth.svg');
-}
+} */
 
 
 
